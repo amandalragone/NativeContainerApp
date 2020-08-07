@@ -39,14 +39,6 @@ class MainTabbedView: UITabBarController {
         secondTab.view.backgroundColor = .blue
         
         let controllers = [firstTab, secondTab]
-
-//        let allApps = miniAppLibrary.allMiniApps()
-        
-//        var controllers = [UIViewController]()
-//        for index in 0...allApps.count-1 {
-//            let currentApp = allApps[index]
-//            controllers.append(createController(title: currentApp.moduleName, imageName: "placeholder", vc: MiniAppView(index: index)))
-//        }
         viewControllers = controllers
         
     }

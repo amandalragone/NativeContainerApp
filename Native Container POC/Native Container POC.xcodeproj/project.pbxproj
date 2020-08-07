@@ -87,6 +87,7 @@
 				73187E6024DCAEA700D09421 /* Native Container POCTests */,
 				73187E6B24DCAEA700D09421 /* Native Container POCUITests */,
 				73187E4824DCAEA500D09421 /* Products */,
+				E7F0C3203B17093E122F1399 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +104,14 @@
 		73187E4924DCAEA500D09421 /* Native Container POC */ = {
 			isa = PBXGroup;
 			children = (
+				73187E8224DCB63700D09421 /* ViewModel */,
+				73187E8124DCB63200D09421 /* View */,
 				73187E4A24DCAEA500D09421 /* AppDelegate.swift */,
 				73187E4C24DCAEA500D09421 /* SceneDelegate.swift */,
-				73187E4E24DCAEA500D09421 /* ViewController.swift */,
 				73187E5024DCAEA500D09421 /* Main.storyboard */,
 				73187E5324DCAEA600D09421 /* Assets.xcassets */,
 				73187E5524DCAEA600D09421 /* LaunchScreen.storyboard */,
 				73187E5824DCAEA600D09421 /* Info.plist */,
-				73187E7A24DCB20800D09421 /* MainTabbedView.swift */,
-				73187E7C24DCB29800D09421 /* MainTabbedViewModel.swift */,
 			);
 			path = "Native Container POC";
 			sourceTree = "<group>";
@@ -132,6 +132,30 @@
 				73187E6E24DCAEA700D09421 /* Info.plist */,
 			);
 			path = "Native Container POCUITests";
+			sourceTree = "<group>";
+		};
+		73187E8124DCB63200D09421 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				73187E4E24DCAEA500D09421 /* ViewController.swift */,
+				73187E7A24DCB20800D09421 /* MainTabbedView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		73187E8224DCB63700D09421 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				73187E7C24DCB29800D09421 /* MainTabbedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E7F0C3203B17093E122F1399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

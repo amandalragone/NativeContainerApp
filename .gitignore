@@ -100,5 +100,5 @@ DerivedData
 *.hmap
 *.xcuserstate
 
-# CocoaPods
-/iosApp/Pods/
+# Carthage
+/Native Container POC/Carthage

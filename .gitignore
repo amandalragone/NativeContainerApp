@@ -80,7 +80,7 @@ lint/tmp/
 
 # OSX
 #
-.DS_Store
+/Native Container POC/.DS_Store
 
 # Xcode
 #

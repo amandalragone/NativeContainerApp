@@ -17,6 +17,8 @@
 		73187E6D24DCAEA700D09421 /* Native_Container_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73187E6C24DCAEA700D09421 /* Native_Container_POCUITests.swift */; };
 		73187E7B24DCB20800D09421 /* MainTabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73187E7A24DCB20800D09421 /* MainTabbedView.swift */; };
 		73187E7D24DCB29800D09421 /* MainTabbedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73187E7C24DCB29800D09421 /* MainTabbedViewModel.swift */; };
+		73CC02AE24E3124700317B74 /* ElectrodeContainer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73CC02AB24E3123800317B74 /* ElectrodeContainer.framework */; };
+		73CC02AF24E3124700317B74 /* ElectrodeContainer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73CC02AB24E3123800317B74 /* ElectrodeContainer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +36,42 @@
 			remoteGlobalIDString = 73187E4624DCAEA500D09421;
 			remoteInfo = "Native Container POC";
 		};
+		73CC02AA24E3123800317B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73CC02A524E3123800317B74 /* ElectrodeContainer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 485009E31E2FF23B009B6610;
+			remoteInfo = ElectrodeContainer;
+		};
+		73CC02AC24E3123800317B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73CC02A524E3123800317B74 /* ElectrodeContainer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 485009EC1E2FF23C009B6610;
+			remoteInfo = ElectrodeContainerTests;
+		};
+		73CC02B124E3128500317B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73CC02A524E3123800317B74 /* ElectrodeContainer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 485009E21E2FF23B009B6610;
+			remoteInfo = ElectrodeContainer;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73CC02B024E3124700317B74 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73CC02AF24E3124700317B74 /* ElectrodeContainer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		73187E4724DCAEA500D09421 /* Native Container POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Native Container POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +90,7 @@
 		73187E6E24DCAEA700D09421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73187E7A24DCB20800D09421 /* MainTabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedView.swift; sourceTree = "<group>"; };
 		73187E7C24DCB29800D09421 /* MainTabbedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbedViewModel.swift; sourceTree = "<group>"; };
+		73CC02A524E3123800317B74 /* ElectrodeContainer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ElectrodeContainer.xcodeproj; path = "Carthage/Checkouts/movielistminiapp-container/ElectrodeContainer.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73CC02AE24E3124700317B74 /* ElectrodeContainer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +127,7 @@
 				73187E6B24DCAEA700D09421 /* Native Container POCUITests */,
 				73187E4824DCAEA500D09421 /* Products */,
 				E7F0C3203B17093E122F1399 /* Pods */,
+				73187E8D24E3110200D09421 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +191,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		73187E8D24E3110200D09421 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73CC02A524E3123800317B74 /* ElectrodeContainer.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		73CC02A624E3123800317B74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73CC02AB24E3123800317B74 /* ElectrodeContainer.framework */,
+				73CC02AD24E3123800317B74 /* ElectrodeContainerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E7F0C3203B17093E122F1399 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,10 +225,12 @@
 				73187E4324DCAEA500D09421 /* Sources */,
 				73187E4424DCAEA500D09421 /* Frameworks */,
 				73187E4524DCAEA500D09421 /* Resources */,
+				73CC02B024E3124700317B74 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				73CC02B224E3128500317B74 /* PBXTargetDependency */,
 			);
 			name = "Native Container POC";
 			productName = "Native Container POC";
@@ -248,6 +307,12 @@
 			mainGroup = 73187E3E24DCAEA500D09421;
 			productRefGroup = 73187E4824DCAEA500D09421 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 73CC02A624E3123800317B74 /* Products */;
+					ProjectRef = 73CC02A524E3123800317B74 /* ElectrodeContainer.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				73187E4624DCAEA500D09421 /* Native Container POC */,
@@ -256,6 +321,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		73CC02AB24E3123800317B74 /* ElectrodeContainer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ElectrodeContainer.framework;
+			remoteRef = 73CC02AA24E3123800317B74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		73CC02AD24E3123800317B74 /* ElectrodeContainerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ElectrodeContainerTests.xctest;
+			remoteRef = 73CC02AC24E3123800317B74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		73187E4524DCAEA500D09421 /* Resources */ = {
@@ -325,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 73187E4624DCAEA500D09421 /* Native Container POC */;
 			targetProxy = 73187E6924DCAEA700D09421 /* PBXContainerItemProxy */;
+		};
+		73CC02B224E3128500317B74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ElectrodeContainer;
+			targetProxy = 73CC02B124E3128500317B74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,14 +553,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7HDEWM8SU;
 				INFOPLIST_FILE = "Native Container POC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amandaragone.Native-Container-POC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amandaragone.ENNative-Container-POC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -483,14 +573,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7HDEWM8SU;
 				INFOPLIST_FILE = "Native Container POC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.amandaragone.Native-Container-POC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.amandaragone.ENNative-Container-POC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
